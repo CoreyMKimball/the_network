@@ -1,5 +1,6 @@
 TheNetwork::Application.routes.draw do
 
+  get "users/new"
  root 'the_directory#home'
 
  get 'the_browse/music'
