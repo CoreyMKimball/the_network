@@ -1,6 +1,6 @@
 TheNetwork::Application.routes.draw do
 
- root 'the_directory#index'
+ root 'the_directory#home'
 
  get 'the_browse/music'
  get 'the_browse/film'

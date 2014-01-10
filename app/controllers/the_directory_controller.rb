@@ -1,7 +1,7 @@
 class TheDirectoryController < ApplicationController
 end
 
-def index
+def home
 end
 
 def music
