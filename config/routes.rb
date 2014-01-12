@@ -1,7 +1,19 @@
 TheNetwork::Application.routes.draw do
 
-  get "users/new"
+resources :the_posts
+
  root 'the_directory#home'
+
+ get "the_directory/music"
+
+  get "the_post/music"
+  get "the_post/film"
+  get "the_post/literature"
+  get "the_post/photography"
+  get "the_post/pnd"
+  get "the_post/dns"
+  
+ get "users/new"
 
  get 'the_browse/music'
  get 'the_browse/film'
