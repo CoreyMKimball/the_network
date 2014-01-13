@@ -6,6 +6,9 @@ resources :the_posts
 
  get "the_directory/music"
 
+  get "users/new"
+  get "users/show"
+
   get "the_post/music"
   get "the_post/film"
   get "the_post/literature"
@@ -13,7 +16,6 @@ resources :the_posts
   get "the_post/pnd"
   get "the_post/dns"
   
- get "users/new"
 
  get 'the_browse/music'
  get 'the_browse/film'
