@@ -1,14 +1,14 @@
 TheNetwork::Application.routes.draw do
-
+  resources :users
+  root 'the_directory#home'
   get "users/new"
- root 'the_directory#home'
-
- get 'the_browse/music'
- get 'the_browse/film'
- get 'the_browse/literature'
- get 'the_browse/photography'
- get 'the_browse/pnd'
- get 'the_browse/dns'
+  get "users/show"
+  get 'the_browse/music'
+  get 'the_browse/film'
+  get 'the_browse/literature'
+  get 'the_browse/photography'
+  get 'the_browse/pnd'
+  get 'the_browse/dns'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
