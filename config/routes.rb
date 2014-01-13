@@ -1,12 +1,19 @@
 TheNetwork::Application.routes.draw do
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 resources :the_posts
 resources :users
+=======
+ resources :users
+>>>>>>> the_post
 
- root 'the_directory#home'
+  root  'the_directory#home'
+  match '/help',    to: 'the_directory#help',    via: 'get'
+  match '/about',   to: 'the_directory#about',   via: 'get'
+  match '/contact', to: 'the_directory#contact', via: 'get'
 
- get "the_directory/music"
+  get "the_directory/music"
 
   get "users/new"
   get "users/show"
@@ -18,6 +25,11 @@ resources :users
   get "the_post/pnd"
   get "the_post/dns"
   
+<<<<<<< HEAD
+=======
+ get "users/new"
+ get "users/show"
+>>>>>>> the_post
 
  get 'the_browse/music'
  get 'the_browse/film'
