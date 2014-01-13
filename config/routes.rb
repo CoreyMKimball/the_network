@@ -1,6 +1,7 @@
 TheNetwork::Application.routes.draw do
 
 resources :the_posts
+resources :users
 
  root 'the_directory#home'
 
