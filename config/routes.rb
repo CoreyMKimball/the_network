@@ -1,10 +1,13 @@
 TheNetwork::Application.routes.draw do
 
+  resources :the_posts
+
  resources :users
  resources :sessions, only: [:new, :create, :destroy]
 
   root  'the_directory#home'
   
+  match '/post',    to: 'the_posts#index',        via: 'get'
   match '/help',    to: 'the_directory#help',    via: 'get'
   match '/about',   to: 'the_directory#about',   via: 'get'
   match '/contact', to: 'the_directory#contact', via: 'get'
