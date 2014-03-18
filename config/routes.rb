@@ -11,6 +11,8 @@ TheNetwork::Application.routes.draw do
   match '/help',    to: 'the_directory#help',    via: 'get'
   match '/about',   to: 'the_directory#about',   via: 'get'
   match '/contact', to: 'the_directory#contact', via: 'get'
+  match '/music', to: 'the_directory#music', via: 'get'
+  match '/invitation', to: 'the_directory#invitation', via: 'get'
 
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'
