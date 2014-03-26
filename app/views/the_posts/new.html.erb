@@ -2,4 +2,8 @@
 
 <%= render 'form' %>
 
+<%= image_tag @user.avatar.url %>
+<%= image_tag @user.avatar.url(:medium) %>
+<%= image_tag @user.avatar.url(:thumb) %>
+
 <%= link_to 'Back', the_posts_path %>

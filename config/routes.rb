@@ -12,6 +12,11 @@ TheNetwork::Application.routes.draw do
   match '/about',   to: 'the_directory#about',   via: 'get'
   match '/contact', to: 'the_directory#contact', via: 'get'
   match '/music', to: 'the_directory#music', via: 'get'
+  match '/film', to: 'the_directory#film', via: 'get'
+  match '/literature', to: 'the_directory#literature', via: 'get'
+  match '/photography', to: 'the_directory#photography', via: 'get'
+  match '/pnd', to: 'the_directory#pnd', via: 'get'
+  match '/dns', to: 'the_directory#dns', via: 'get'
   match '/invitation', to: 'the_directory#invitation', via: 'get'
 
   match '/signup',  to: 'users#new',            via: 'get'
@@ -20,6 +25,11 @@ TheNetwork::Application.routes.draw do
 
 
   get "the_directory/music"
+  get "the_directory/film"
+  get "the_directory/literature"
+  get "the_directory/photography"
+  get "the_directory/pnd"
+  get "the_directory/dns"
 
   get "users/new"
   get "users/show"

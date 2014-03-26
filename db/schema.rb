@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140115033134) do
+ActiveRecord::Schema.define(version: 20140318232907) do
 
   create_table "posts", force: true do |t|
     t.string   "title"
@@ -36,6 +36,10 @@ ActiveRecord::Schema.define(version: 20140115033134) do
     t.datetime "updated_at"
     t.string   "password_digest"
     t.string   "remember_token"
+    t.string   "postimage_file_name"
+    t.string   "postimage_content_type"
+    t.integer  "postimage_file_size"
+    t.datetime "postimage_updated_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
